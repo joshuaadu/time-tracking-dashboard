@@ -8,7 +8,7 @@ export default function App() {
     <div className="App">
       <Profile />
       {data.map((item) => (
-        <Activity title={item} />
+        <Activity title={item} key={item} />
       ))}
     </div>
   );
