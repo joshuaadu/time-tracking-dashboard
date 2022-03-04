@@ -5,19 +5,20 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   color: white;
   background-color: hsl(226, 43%, 10%);
   font-family: "Rubik", sans-serif;
+}
+.App {
+  width: 100%;
   display: grid;
+  padding: 3rem 1rem;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
 }
-/* .App {
-  display
-  width: 100%;
-} */
 
 img {
   width: 100%;
