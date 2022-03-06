@@ -31,7 +31,7 @@
 .period {
   width: 100%;
   background-color: hsl(235, 46%, 20%);
-  color: hsl(236, 100%, 87%);
+  color: hsl(235, 45%, 61%);
   height: 6rem;
   transform: translateY(-20%);
 }
@@ -49,6 +49,10 @@
 .period a {
   text-decoration: none;
   color: inherit;
+}
+
+a.active {
+  color: white;
 }
 
 h2 {

@@ -1,15 +1,39 @@
 import useIcon from "../hooks/useIcon";
 import Card from "../UI/Card";
 import classes from "./Activity.module.css";
+import ellipsis from "../images/icon-ellipsis.svg";
+import usePeriod from "../hooks/usePeriod";
 const Activity = (props) => {
-  const iconName = props.title.toLowerCase().replace(" ", "-");
+  const { title, timeframes } = props.data;
+  const { current, previous } = usePeriod(
+    props.timeFrame,
+    timeframes[props.timeFrame]
+  );
+  const iconName = title.toLowerCase().replace(" ", "-");
   const icon = useIcon(iconName);
+
+  const backgroundCard = (
+    <Card className={`${classes["background-card"]} ${classes[iconName]}`}>
+      <img className={classes.img} src={icon} alt={`${props.title} icon`} />
+    </Card>
+  );
+  const frontCard = (
+    <Card className={classes["details-card"]}>
+      <div>
+        <div className={classes.title}>{title}</div>
+        <div className={classes["current-period"]}>{current}</div>
+      </div>
+      <div className={classes["details-right"]}>
+        <img src={ellipsis} className={classes.ellipsis} alt="ellipsis" />
+        <div className={classes["previous-period"]}>{previous}</div>
+      </div>
+    </Card>
+  );
+
   return (
     <div className={classes.activity}>
-      <Card className={`${classes["background-card"]} ${classes[iconName]}`}>
-        <img className={classes.img} src={icon} alt={`${props.title} icon`} />
-      </Card>
-      <Card className={classes["details-card"]}></Card>
+      {backgroundCard}
+      {frontCard}
     </div>
   );
 };
