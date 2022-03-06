@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Route } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 import Activity from "./components/Activity";
 import Profile from "./components/Profile";
 import Data from "./store/data";
@@ -14,6 +14,9 @@ export default function App() {
   return (
     <div className="App">
       <Profile timeframe={timeFrameHandler} />
+      <Route path="/" exact>
+        <Redirect to="/daily" />
+      </Route>
       <Route path="/daily">
         {Data.map((item) => (
           <Activity
