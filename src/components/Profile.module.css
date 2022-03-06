@@ -51,6 +51,10 @@
   color: inherit;
 }
 
+a.active {
+  color: white;
+}
+
 h2 {
   font-weight: 400;
 }

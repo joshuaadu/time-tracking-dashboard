@@ -18,13 +18,31 @@ const Profile = (props) => {
       <Card className={classes.period}>
         <ul>
           <li>
-            <NavLink to="/">Daily</NavLink>
+            <NavLink
+              to="/daily"
+              activeClassName={classes.active}
+              onClick={() => props.timeframe("daily")}
+            >
+              Daily
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/">Weekly</NavLink>
+            <NavLink
+              to="/weekly"
+              activeClassName={classes.active}
+              onClick={() => props.timeframe("weekly")}
+            >
+              Weekly
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/">Monthly</NavLink>
+            <NavLink
+              to="/monthly"
+              activeClassName={classes.active}
+              onClick={() => props.timeframe("monthly")}
+            >
+              Monthly
+            </NavLink>
           </li>
         </ul>
       </Card>

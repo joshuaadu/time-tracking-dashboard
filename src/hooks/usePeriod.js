@@ -10,7 +10,7 @@ const usePeriod = (timeframe, data) => {
         current: `${data.current}hrs`,
         previous: `Last Week-${data.previous}hrs`
       };
-    case "Monthly":
+    case "monthly":
       return {
         current: `${data.current}hrs`,
         previous: `Last Month-${data.previous}hrs`
