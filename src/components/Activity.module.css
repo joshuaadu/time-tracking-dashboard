@@ -6,6 +6,18 @@
   height: 12rem;
 }
 
+.title {
+  font-size: 18px;
+}
+
+.current-period {
+  font-size: 28px;
+  font-weight: lighter;
+}
+.previous-period {
+  color: hsl(236, 100%, 87%);
+}
+
 .details-card {
   grid-column: 1/-1;
   grid-row: 2/5;
@@ -13,6 +25,18 @@
   height: 100%;
   background-color: hsl(235, 46%, 20%);
   z-index: 100;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.details-right {
+  align-items: flex-end;
 }
 
 .background-card {
@@ -29,6 +53,10 @@
 .img {
   width: 60px;
   transform: translateY(-5px);
+}
+
+.ellipsis {
+  width: 1.5rem;
 }
 
 .work {
