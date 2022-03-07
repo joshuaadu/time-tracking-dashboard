@@ -11,8 +11,8 @@ const Profile = (props) => {
           <img src={profileImg} alt="Profile" />
         </div>
         <div className={classes.title}>
-          <p>Report for</p>
-          <h2>Jeremy Robson</h2>
+          <div>Report for</div>
+          <div className={classes.name}>Jeremy Robson</div>
         </div>
       </Card>
       <Card className={classes.period}>

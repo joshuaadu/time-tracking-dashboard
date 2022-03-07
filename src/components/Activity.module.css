@@ -92,3 +92,9 @@ Light red (work): hsl(15, 100%, 70%)
 - Violet (social): hsl(264, 64%, 52%)
 - Soft orange (self care): hsl(43, 84%, 65%)
 */
+
+@media (min-width: 528px) {
+  .activity {
+    height: 100%;
+  }
+}

@@ -23,3 +23,15 @@ body {
 img {
   width: 100%;
 }
+
+@media (min-width: 528px) {
+  .App {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
+    grid-auto-rows: 12rem;
+  }
+}
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+*/
