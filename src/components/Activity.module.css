@@ -31,6 +31,10 @@
   justify-content: space-between;
 }
 
+.details-card:hover {
+  background-color: hsl(235, 45%, 61%);
+}
+
 .details-card > div {
   display: flex;
   /* flex-direction: column; */
@@ -62,6 +66,9 @@
   height: 0.4rem;
 }
 
+.ellipsis:hover {
+  color: white;
+}
 .work {
   background-color: hsl(15, 100%, 70%);
 }

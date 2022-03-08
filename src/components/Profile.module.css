@@ -55,6 +55,9 @@
   color: inherit;
 }
 
+.period a:hover {
+  color: white;
+}
 a.active {
   color: white;
 }
