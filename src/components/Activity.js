@@ -19,12 +19,12 @@ const Activity = (props) => {
   );
   const frontCard = (
     <Card className={classes["details-card"]}>
-      <div>
+      <div className={classes["details-top"]}>
         <div className={classes.title}>{title}</div>
-        <div className={classes["current-period"]}>{current}</div>
-      </div>
-      <div className={classes["details-right"]}>
         <img src={ellipsis} className={classes.ellipsis} alt="ellipsis" />
+      </div>
+      <div className={classes["details-bottom"]}>
+        <div className={classes["current-period"]}>{current}</div>
         <div className={classes["previous-period"]}>{previous}</div>
       </div>
     </Card>

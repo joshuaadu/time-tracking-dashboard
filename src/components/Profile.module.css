@@ -1,7 +1,7 @@
 .profile {
   display: grid;
   /* grid-template-rows: repeat(); */
-  max-width: 25rem;
+  max-width: 20rem;
 }
 
 .info {
@@ -28,6 +28,10 @@
 .title {
   align-self: center;
 }
+
+.name {
+  font-size: 22px;
+}
 .period {
   width: 100%;
   background-color: hsl(235, 46%, 20%);
@@ -51,10 +55,65 @@
   color: inherit;
 }
 
+.period a:hover {
+  color: white;
+}
 a.active {
   color: white;
 }
 
 h2 {
   font-weight: 400;
+}
+
+@media (min-width: 528px) {
+  .profile {
+    grid-row: span 2;
+    height: 100%;
+    grid-template-rows: repeat(13, 1fr);
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .info {
+    padding-top: 2rem;
+    flex-direction: column;
+    width: 100%;
+    /* grid-row: span 6; */
+    grid-area: 1/1/10/-1;
+    height: 100%;
+    z-index: 100;
+  }
+
+  .img {
+    align-self: flex-start;
+    max-width: 4.5rem;
+    max-height: 4.5rem;
+  }
+
+  .img img {
+    transform: none;
+  }
+
+  .title {
+    padding-top: 2rem;
+    align-self: flex-start;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+  .period {
+    grid-area: 5/1/-1/-1;
+    height: 100%;
+    transform: none;
+  }
+  .period ul {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+  }
+  .period li {
+    padding-top: 1rem;
+  }
 }
