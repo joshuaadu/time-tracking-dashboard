@@ -26,18 +26,19 @@
   background-color: hsl(235, 46%, 20%);
   z-index: 100;
   display: flex;
+  flex-direction: column;
   gap: 0.5rem;
   justify-content: space-between;
 }
 
 .details-card > div {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  /* flex-direction: column; */
+  justify-content: space-between;
 }
 
 .details-right {
-  align-items: flex-end;
+  /* align-items: flex-end; */
 }
 
 .background-card {
@@ -58,6 +59,7 @@
 
 .ellipsis {
   width: 1.5rem;
+  height: 0.4rem;
 }
 
 .work {
@@ -96,5 +98,16 @@ Light red (work): hsl(15, 100%, 70%)
 @media (min-width: 528px) {
   .activity {
     height: 100%;
+  }
+  .details-top {
+    align-items: center;
+  }
+  .details-bottom {
+    flex-direction: column;
+  }
+
+  .current-period {
+    font-size: 2.5rem;
+    padding-top: 0.5rem;
   }
 }
