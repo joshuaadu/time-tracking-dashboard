@@ -64,6 +64,7 @@
 .ellipsis {
   width: 1.5rem;
   height: 0.4rem;
+  color: white;
 }
 
 .ellipsis:hover {
