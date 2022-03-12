@@ -14,7 +14,6 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -55,14 +54,8 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 - I learned how to dynamcially importing SVG files into a Component. In previous projects, I added SVG or images directly but in this project, I had to dynamically import images using a dynamic URL.
 
-
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```js
 const [icon, setIcon] = useState(null);
   ((name) => {
@@ -75,6 +68,7 @@ const [icon, setIcon] = useState(null);
     return "Icon not found";
   }
 ```
+
 ### Continued development
 
 - Add Form to record tasks and hours
